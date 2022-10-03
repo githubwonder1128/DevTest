@@ -99,9 +99,7 @@ function ProductBar() {
             </Row>
             <Row className="productBar" wrap={false}>
                 <Col flex={window.innerWidth > 768 ? "60px" : "16px"} className="arrowLeft" onClick={() => handlePage("prev")}>
-                    {
-                        currentPage-1 < 0 ? "" : <img src={LeftArrow} alt="Arrow"/>
-                    }
+                    <img src={LeftArrow} alt="Arrow"/>
                 </Col>
                 <Col flex="auto">
                     {/* <Carousel arrows {...settings}> */}
@@ -125,9 +123,7 @@ function ProductBar() {
                     {/* </Carousel> */}
                 </Col>
                 <Col flex={window.innerWidth > 768 ? "60px" : "16px"} className="arrowRight" onClick={() => handlePage("next")}>
-                    {
-                        currentPage+1 > totalItems.length / perPage ? "" : <img src={RightArrow}  alt="Arrow"/>
-                    }
+                <img src={RightArrow}  alt="Arrow"/>
                 </Col>
 
             </Row>
