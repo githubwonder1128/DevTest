@@ -1,38 +1,453 @@
+
+
 .App {
+  margin-left: calc(50% - 720px);
+  margin-right: calc(50% - 720px);
+  width: 1440px;
+  overflow-y: auto;
+  overflow-y: auto;
+}
+
+.app-title .title {
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  background-color: black;
+  font-family: "Lanto";
+  font-size: 14px;
+  color: white;
+  height: 58px;
+}
+.app-title .title p {
+  margin: 0px;
+}
+
+.menuBar {
+  background-color: #10504f;
+  position: relative;
+  height: 138px;
+}
+
+.menuBar .logo-img{
+  position: absolute;
+  width: 93px;
+  height: 77px;
+  left: 48px;
+  top: 34px;
+}
+
+.menuBar .menuBar-items{
+  position: absolute;
+  width: 69px;
+  height: 24px;
+  left: 437px;
+  top: 72px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.menuBar .menuItem{
+  margin-left: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.menuBar .menuBar-icons{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 1276px;
+  top: 71px;
+  display: flex
+}
+
+.menuBar .menuIcon{
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.heroBar .heroBar-Card {
+  position: relative;
+  height: 638px;
+}
+
+.heroBar .description {
+  position: absolute;
+  width: 564px;
+  height: 31px;
+  left: 136px;
+  top: 329px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+
+  /* Green */
+
+  color: #10504f;
+}
+
+.heroBar .title {
+  position: absolute;
+  height: 112px;
+  left: 133px;
+  top: 208px;
+
+  /* Header 1 - Dekstop */
+
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 105px;
+
+  /* Green */
+
+  color: #10504f;
+}
+
+.heroBar .heroButton {
+  position: absolute;
+  width: 129px;
+  height: 43px;
+  left: 136px;
+  top: 386px;
+  color: white;
+  background: #000000;
+}
+
+.accessBar-content {
+  margin-top: 50px;
+}
+
+.accessBar {
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.accessBar .accessBar-Card {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 569px;
+}
+
+.accessBar .description {
+  text-align: center;
+  font-family: "Pacifico";
+  font-size: 40px;
+  font-weight: 400;
+  background-color: #10504f;
+
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 435px;
+  height: 114px;
+  padding-top: 16px;
+  padding-bottom: 23px;
+  margin: 0;
+  color: white;
+  line-height: 70.24px;
+}
+
+.productBar-content {
+  margin-top: 46px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.productBar-content .title {
+  text-align: center;
+  font-size: 60px;
+}
+
+.productBar-content p {
+  margin: 0;
+}
+
+.productBar-content .descriptionContent {
+  margin-top: 22px;
+}
+
+.productBar-content .title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.productBar-content .description {
+  margin-top: 7px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.productBar-content .price {
+  margin-top: 3px;
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 46px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer-content {
+  margin-top: 68px;
+}
+
+.footer-content .content {
+  position: relative;
+  height: 638px;
+}
+
+.footer-content .description {
+  /* Everyday tees you need. */
+
+  position: absolute;
+  width: 564px;
+  height: 31px;
+  left: 948px;
+  top: 173px;
+
+  /* Subheader - Desktop */
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #ffffff;
+}
+
+.footer-content .title {
+  position: absolute;
+  height: 112px;
+  left: 945px;
+  top: 52px;
+
+  /* Header 1 - Dekstop */
+
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 105px;
+
+  color: #ffffff;
+}
+
+.footer-content .footerButton {
+  position: absolute;
+  width: 129px;
+  height: 43px;
+  left: 948px;
+  top: 230px;
+
+  /* Green */
+
+  background: #10504f;
   color: white;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.cotactBar-content {
+  background-color: #10504f;
+  height: 332px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cotactBar-content .title {
+  /* text-align: center; */
+  position: relative;
+}
+
+.cotactBar-content .avatar {
+  position: absolute;
+  width: 52.36px;
+  height: 36px;
+  left: 466px;
+  top: 96px;
+}
+
+.cotactBar-content .title-title {
+  position: absolute;
+  width: 452px;
+  height: 75px;
+  left: 525px;
+  top: 75px;
+
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.cotactBar-content .description {
+  position: absolute;
+  width: 657px;
+  height: 82px;
+  left: 48px;
+  top: 176px;
+
+  /* Body - Desktop */
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+.cotactBar-content .email_address {
+  position: absolute;
+  width: 490px;
+  height: 54px;
+  left: 750px;
+  top: 176px;
+
+  background: #ffffff;
+}
+
+.cotactBar-content .subscribe {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 140px;
+  height: 54px;
+  left: 1253px;
+  top: 176px;
+  background: #10504f;
+  color: white;
+  border: 2px solid #ffffff;
+}
+
+.complexBar-content{
+  position: relative;
+  height: 416px;
+  background-color: black;
+}
+
+.complexBar-content .customerService .title{
+  position: absolute;
+  height: 41px;
+  left: 48px;
+  top: 62px;
+
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.complexBar-content .customerService .description{
+  position: absolute;
+  height: 41px;
+  left: 48px;
+  top: 114px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.complexBar-content .company .title{
+  position: absolute;
+  height: 41px;
+  left: 298px;
+  top: 62px;
+
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.complexBar-content .company .description{
+  position: absolute;
+  height: 41px;
+  left: 298px;
+  top: 114px;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.complexBar-content .follow .title{
+  position: absolute;
+  height: 41px;
+  left: 1225px;
+  top: 62px;
+
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.complexBar-content .follow .description{
+  position: absolute;
+  width: 17px;
+  height: 32px;
+  left: 1225px;
+  top: 124px;
+  display: flex
+}
+
+.complexBar-content .follow .description .followIcon:nth-child(2){
+  margin-left: 47px;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: unset;
+  font-size: unset;
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+  color: unset;
 }

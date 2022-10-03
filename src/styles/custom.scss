@@ -1,0 +1,855 @@
+$titleFont : 4.17vw;
+
+body{
+    width: 100vw;
+}
+
+.app-title{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: "Lato";
+    padding-top: 21px;
+    padding-bottom: 20px;
+
+    p{
+        margin: 0;
+    }
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: unset;
+  font-size: unset;
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:focus,
+.ant-carousel .slick-next:focus {
+  color: unset;
+}
+
+@media (max-width: 768px) {
+    .menuBar-content{
+        .menuBar{
+            background-color: #10504f!important;
+            display: flex;
+            height: 64px;
+            padding: 18px 20px 18px 20px;
+            .menu-img{
+                cursor: pointer;
+                width: 28px;
+                height: 28px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .logo-img {
+                margin-left: 25px;
+                width: 55.44px;
+                height: 46px;
+                img{
+                    width: 100%;
+                }
+            }
+
+            .menuBar-icons{
+                position: absolute;
+                top: 23.31px;
+                right: 20px;
+                .menuIcon{
+                    padding: 0 10px;
+                }
+            }
+
+            .menuBar-items{
+                z-index: 10;
+                position: absolute;
+                top: 54px;
+                // display: inherit;
+                background-color: white;
+                .menuItem{
+                    cursor: pointer;
+                    // display: inline;    
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 2vw;
+                    line-height: 24px;
+                    /* identical to box height */
+    
+                    text-align: left;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: black;
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+    
+
+    .heroBar-content{
+        .heroBar{
+            display: flex;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            .heroBar-Card{
+                .img-content{
+                    width: 100%;
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    img{
+                        width: 100%;
+                    }
+                    .heroBar-circles{
+                        display: flex   ;
+                        position: absolute;
+                        bottom: 0px;
+                        .heroBar-circle{
+                            margin: 0 4px;
+                            cursor: pointer;
+                            transform: scale(0.5);
+                        }
+                    }
+                }
+                .heroBar-Description{
+                    background-color: #EFEFEF;
+                    padding: 12px 51px 38.5px 51px;
+
+                    text-align: center;
+                        .title{
+                            font-family: 'Pacifico';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 6.93vw;
+
+                            margin: 0;
+                            /* Green */
+                            
+                            color: #10504F;
+                        }
+
+                        .description{
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 3.73vw;
+                            line-height: 31px;
+                            margin: 0;
+                            /* Green */
+
+                            color: #10504F;
+                        }
+
+                        .heroButton{
+                            margin: 14.82px 0 0 0;
+                            width: 33.21vw;
+                            height: 42px;
+                            color: #ffffff;
+                            background: #000000;
+                            border: none;
+                            font-size: 3.2vw;
+                        }
+                }
+            }
+            
+        }
+    }
+
+    .accessBar-content{
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .accessBar-Card{
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            .description{
+                width: calc(100% - 20px);
+                position: absolute;
+                bottom: 0;
+                font-family: 'Pacifico';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 5.33vw;
+                text-align: center;
+                color: #FFFFFF;
+                background-color: #10504F;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 0;
+            }
+        }
+    }
+
+    .productBar-content
+    {
+        padding: 0 20px;
+        margin-top: 46px;
+        .arrowLeft img {
+            float: left;
+            width: 1.6vw;
+            margin-top: 100px;
+        }
+        .arrowRight img {
+            float: right;
+            width: 1.6vw;
+            margin-top: 100px;
+        }
+        .title{
+            font-family: 'Pacifico';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 6.93vw;
+            line-height: 63.86px;
+            text-align: center;
+            margin: 0;
+            color: #000000;
+            p{
+                margin: 0;
+            }
+        }
+        .productBar{
+            .productBar-Card{
+                .img-content{
+                    width: 100%;
+                }
+                .content{
+                    .title{
+                        margin: 11.48px 0 0 0;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 4.26vw;
+                        line-height: 26px;
+                        text-align: center;
+
+                        color: #000000
+                    }
+                    .description{
+                        margin: 0;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 3.2vw;
+                        line-height: 19px;
+                        text-align: center;
+
+                        color: #000000;
+                    }
+                    .price{
+                        margin: 0;
+                        font-family: 'Pacifico';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 4.8vw;
+                        line-height: 25px;
+                        text-align: center;
+
+                        /* Green */
+
+                        color: #10504F;
+                    }
+                }
+            }
+        }
+        
+    } 
+
+    .footerBar-content{
+        margin-top: 31px;
+        .footerBar{
+            .content{
+                .img-content {
+                    width: 100%;
+                }
+                .description-content{
+                    text-align: center;
+                    margin: 16px 0 34.5px 0;
+                    .title{
+                        font-family: 'Pacifico';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 26px;
+                        line-height: 46px;
+                        text-align: center;
+                        margin: 0;
+                    }
+                    .description{
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: center;
+
+                    }
+                    .footerButton{
+                        text-align: center;
+                        border: none;
+                        color: white;
+                        width: 33.21vw;
+                        height: 42px;
+                        /* Green */
+
+                        background: #10504F;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactBar-content{
+        background-color: #10504F;
+        padding: 14px 26px 25px 26px;
+        .contactBar{
+            .title{
+                text-align: center;
+                span{
+                    text-align: center;
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.34vw;
+                    line-height: 70px;
+                    text-align: center;
+                    margin: 0;
+                    color: #FFFFFF;
+                    padding-left: 6px;
+                }
+                
+            }
+            
+        }
+        .contactBar-form{
+            margin-top: 11px;
+            .description{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3.73vw;
+                line-height: 26px;
+                text-align: center;
+                color: #FFFFFF
+            }
+
+            .contactBar-content{
+                padding: 0px;
+                text-align: center;
+                // margin-left: 45px;
+                .email_address{
+                    width: 100%;
+                    height: 41px;
+                    // font-size: 1.527vw;
+                    background: #FFFFFF;
+                }
+                .subscribe {
+                    margin-top: 10px;
+                    width: 39.46vw;
+                    // width: 9.72vw;
+                    height: 41px;
+                    background-color: #10504F;
+                    border: 2px solid #FFFFFF;
+                    color: white;
+                    text-align: center;
+                    font-size: 3.2vw;
+                }
+            }
+        }
+
+        
+    }
+
+    .complexBar-content{
+        background-color: #000000;
+        padding: 13px 20px 13px 20px;
+        .complexBar{
+            // display: flex;
+            .customerService{
+                .title{
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.86vw;
+                    line-height: 39px;
+
+                    color: #FFFFFF;
+                }
+                .description{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 3.2vw;
+                    /* or 222% */
+
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .company{
+                margin-top: 11px 0 0 0;
+                .title{
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.86vw;
+                    line-height: 39px;
+
+                    color: #FFFFFF;
+                }
+                .description{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 3.2vw;
+                    /* or 222% */
+
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .follow{
+                margin-top: 23px;
+                .title{
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.86vw;
+                    line-height: 39px;
+
+                    color: #FFFFFF;
+                }
+
+                .description{
+                    display: flex;
+                    .followIcon{
+                        width: 3.73vw;
+                    }
+                    .followIcon:nth-child(2), :nth-child(3){
+                        margin-left: 10.1vw;
+                        width: 6.94vw;
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+    .menuBar{
+        background-color: #10504f!important;
+        padding: 34px 48px 27px 48px;
+        height: 138px!important;
+        display: inline;
+        text-align: center;
+        .menu-img{
+            display: none;
+        }
+        .logo-img {
+            position: absolute;
+            width: 93px;
+            height: 77px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .menuBar-items{
+            text-align: center;
+            padding-top: 38px;
+            .menuItem{
+                cursor: pointer;
+                display: inline;    
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.38vw;
+                line-height: 24px;
+                /* identical to box height */
+
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding: 0 25px;
+            }
+        }
+        .menuBar-icons{
+            position: absolute;
+            top: 72px;
+            right: 48px;
+            .menuIcon{
+                padding: 0 15px;
+            }
+        }
+    }
+
+    .heroBar-content{
+        .heroBar{
+            display: flex;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            .heroBar-Card{
+                width: 100%;
+                .img-content{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 100%;
+                    }
+                    .heroBar-circles{
+                        display: flex   ;
+                        position: absolute;
+                        bottom: 20px;
+                        .heroBar-circle{
+                            margin: 0 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .heroBar-Description{
+                    position: absolute;
+                    top: 32.60%;
+                    left: 136px;
+                        .title{
+                            font-family: 'Pacifico';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: $titleFont;
+                            line-height: 105px;
+                            padding: 0px;
+                            margin: 0px;
+                            /* Green */
+                            
+                            color: #10504F;
+                        }
+
+                        .description{
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1.8056vw;
+                            line-height: 31px;
+                            margin: 9px 0 0 0;
+                            /* Green */
+
+                            color: #10504F;
+                        }
+
+                        .heroButton{
+                            margin: 26px 0 0 0;
+                            width: 8.96vw;
+                            height: 43px;
+                            color: #ffffff;
+                            background: #000000;
+                            border: none;
+                            font-size: 0.972vw;
+                        }
+                }
+            }
+            
+        }
+    }
+
+    .accessBar-content{
+        margin-top: 50px;
+        padding-left: 38px;
+        padding-right: 38px;
+        .accessBar-Card{
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            .description{
+                width: calc(100% - 20px);
+                position: absolute;
+                bottom: 0;
+                // height: 114px;
+                font-family: 'Pacifico';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.778vw;
+                line-height: 70px;
+                text-align: center;
+                padding-top: 16px;
+                padding-bottom: 23px;
+                color: #FFFFFF;
+                background-color: #10504F;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 0;
+            }
+        }
+    }
+
+    .productBar-content
+    {
+        margin-top: 46px;
+        padding-left: 48px;
+        padding-right: 48px;
+        .arrowLeft img {
+            cursor: pointer;
+            float: left;
+            width: 1.6vw;
+            margin-top: 20vh;
+        }
+        .arrowRight img {
+            cursor: pointer;
+            float: right;
+            width: 1.6vw;
+            margin-top: 20vh;
+        }
+        .title{
+            font-family: 'Pacifico';
+            font-style: normal;
+            font-weight: 400;
+            font-size: $titleFont;
+            line-height: 105px;
+            text-align: center;
+    
+            color: #000000;
+        }
+        .productBar{
+            .productBar-Card{
+                .img-content{
+                    width: 100%;
+                }
+                .content{
+                    .title{
+                        margin: 22px 0 0 0;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.5278vw;
+                        line-height: 26px;
+                        text-align: center;
+
+                        color: #000000
+                    }
+                    .description{
+                        margin: 7px 0 0 0;
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 1.11vw;
+                        line-height: 19px;
+                        text-align: center;
+
+                        color: #000000;
+                    }
+                    .price{
+                        margin: 3px 0 0 0;
+                        font-family: 'Pacifico';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.805vw;
+                        line-height: 46px;
+                        text-align: center;
+
+                        /* Green */
+
+                        color: #10504F;
+                    }
+                }
+            }
+        }
+        
+    } 
+
+    .footerBar-content{
+        margin-top: 68px;
+        .footerBar{
+            .content{
+                position: relative;
+                display: flex;
+                .img-content {
+                    width: 100%;
+                }
+                .description-content{
+                    position: absolute;
+                    top: 52px;
+                    right: 54px;
+                    .title{
+                        font-family: 'Pacifico';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: $titleFont;
+                        line-height: 105px;
+                        color: #FFFFFF;
+                        margin: 0;
+                    }
+                    .description{
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.805vw;
+                        line-height: 31px;
+                        // margin-top: ;
+                        color: #FFFFFF;
+                    }
+                    .footerButton{
+                        border: none;
+                        color: white;
+                        width: 8.96vw;
+                        height: 43px;
+                        font-size: 0.972vw;
+                        /* Green */
+
+                        background: #10504F;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactBar-content{
+        background-color: #10504F;
+        padding: 75px 48px 75px 48px;
+        .contactBar{
+            .title{
+                text-align: center;
+                span{
+                    text-align: center;
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2.77vw;
+                    line-height: 70px;
+                    text-align: center;
+                    margin: 0;
+                    color: #FFFFFF;
+                    padding-left: 6px;
+                }
+                
+            }
+            
+        }
+        .contactBar-form{
+            margin-top: 26px;
+            .description{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.5278vw;
+                line-height: 26px;
+
+                color: #FFFFFF
+            }
+
+            .contactBar-content{
+                padding: 0px;
+                margin-left: 45px;
+                .email_address{
+                    width: 100%;
+                    height: 54px;
+                    font-size: 1.527vw;
+                    background: #FFFFFF;
+                }
+                .subscribe {
+                    
+                    width: 100%;
+                    // width: 9.72vw;
+                    height: 54px;
+                    background-color: #10504F;
+                    border: 2px solid #FFFFFF;
+                    color: white;
+                    text-align: center;
+                    font-size: 0.972vw;
+                }
+            }
+        }
+    }
+
+    .complexBar-content{
+        background-color: #000000;
+        .complexBar{
+            display: flex;
+            padding: 62px 48px 62px 48px;
+            .customerService{
+                
+                .title{
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.5277vw;
+                    line-height: 39px;
+                    width: 11.67vw;
+                    color: #FFFFFF;
+                }
+                .description{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.25vw;
+                    line-height: 40px;
+                    /* or 222% */
+
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .company{
+                margin-left: 6.38vw;
+                .title{
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.5277vw;
+                    line-height: 39px;
+
+                    color: #FFFFFF;
+                }
+                .description{
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.25vw;
+                    line-height: 40px;
+                    /* or 222% */
+
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .follow{
+                margin-left: 57vw;
+                .title{
+                    font-family: 'Pacifico';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.5277vw;
+                    line-height: 39px;
+
+                    color: #FFFFFF;
+                }
+
+                .description{
+                    // display: flex;
+                    .followIcon{
+                        width: 1.18vw;
+                    }
+                    .followIcon:nth-child(2){
+                        margin-left: 4.34vw;
+                        width: 2.22vw;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
