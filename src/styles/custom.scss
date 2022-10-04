@@ -17,17 +17,8 @@ body{
     }
 }
 
-.ant-carousel .slick-prev,
-.ant-carousel .slick-next {
-  color: unset;
-  font-size: unset;
-}
-
-.ant-carousel .slick-prev:hover,
-.ant-carousel .slick-next:hover,
-.ant-carousel .slick-prev:focus,
-.ant-carousel .slick-next:focus {
-  color: unset;
+.ant-carousel .slick-dots li{
+    display: none!important;
 }
 
 @media (max-width: 768px) {
@@ -93,10 +84,10 @@ body{
 
     .heroBar-content{
         .heroBar{
-            display: flex;
-            width: 100%;
-            text-align: center;
-            justify-content: center;
+            // display: flex;
+            // width: 100%;
+            // text-align: center;
+            // justify-content: center;
             .heroBar-Card{
                 .img-content{
                     width: 100%;
@@ -219,6 +210,9 @@ body{
             .productBar-Card{
                 .img-content{
                     width: 100%;
+                    img{
+                        width: 100%;
+                    }
                 }
                 .content{
                     .title{
@@ -497,10 +491,13 @@ body{
 
     .heroBar-content{
         .heroBar{
-            display: flex;
-            width: 100%;
-            text-align: center;
-            justify-content: center;
+            .custom-dots{
+                background-image: url("../resource/circle.png");
+            }
+            // display: flex;
+            // width: 100%;
+            // text-align: center;
+            // justify-content: center;
             .heroBar-Card{
                 width: 100%;
                 .img-content{
@@ -625,6 +622,9 @@ body{
             .productBar-Card{
                 .img-content{
                     width: 100%;
+                    img{
+                        width: 100%;
+                    }
                 }
                 .content{
                     .title{

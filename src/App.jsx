@@ -1,5 +1,6 @@
 import { Row, Col } from 'antd';
 import HeroBar from './components/heroBar';
+// import HeroBar from './components/HeroBar/index';
 import MenuBar from './components/menuBar';
 import AccessBar from './components/accessBar';
 import ProductBar from './components/productBar'

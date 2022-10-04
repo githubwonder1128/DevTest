@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from "react";
-import { Row, Col } from 'antd';
+import React, { useState, useEffect, useRef } from "react";
+import { Row, Col, Carousel } from 'antd';
 import Product from '../resource/product.png';
 import LeftArrow from "../resource/left.png";
 import RightArrow from "../resource/right.png";
@@ -35,7 +35,7 @@ function ProductBar() {
             title: "Product Title",
             description: "WOMEN’S T-SHIRT",
             price: "$4"
-        } ,
+        },
         {
             src: Product,
             title: "Product Title",
@@ -65,30 +65,27 @@ function ProductBar() {
             title: "Product Title",
             description: "WOMEN’S T-SHIRT",
             price: "$9"
-        }  
+        }
     ]
 
     useEffect(() => {
         const cnt = perPage;
-        const tempItems = []
-        for (let i = 0; i < cnt; i++) {
-            if (perPage * currentPage+i < totalItems.length ) {
-                tempItems.push(totalItems[perPage*currentPage + i])
+        const tempItems = [];
+        for (let i = 0; i < totalItems.length / cnt; i++) {
+            const temp = [];
+            for (let k = 0; k < cnt; k++) {
+                if (totalItems[cnt * i + k]) {
+                    temp.push(totalItems[cnt * i + k])
+                }
             }
+            tempItems.push(temp)
         }
+
         setItems(tempItems);
     }, [currentPage])
 
-    const handlePage = (arrow) => {
-        const cpage = currentPage;
-        const totalPage = parseInt(totalItems.length / perPage) ;
-        if (arrow === "prev") {
-            setcurrentPage(cpage - 1 < 0 ? 0 : cpage - 1)
-        }else{
-            setcurrentPage((cpage + 1 > totalPage) ? totalPage : cpage + 1)
-        }
 
-    }
+    const slider = useRef();
 
     return (
         <div className="productBar-content">
@@ -98,32 +95,39 @@ function ProductBar() {
                 </Col>
             </Row>
             <Row className="productBar" wrap={false}>
-                <Col flex={window.innerWidth > 768 ? "60px" : "16px"} className="arrowLeft" onClick={() => handlePage("prev")}>
-                    <img src={LeftArrow} alt="Arrow"/>
+                <Col flex={window.innerWidth > 768 ? "60px" : "16px"} className="arrowLeft">
+                    <img src={LeftArrow} alt="Arrow"  onClick={() => slider.current.prev()}/>
                 </Col>
                 <Col flex="auto">
-                    {/* <Carousel arrows {...settings}> */}
-
-                            <Row>
+                    <Carousel ref={ref => {
+                        slider.current = ref;
+                    }}>
+                        {
+                            items.map((item, index) => <div> <Row key={index}>
                                 {
-                                    items.map((item, index) =>
-                                        <Col span={6} key={index} className="productBar-Card" sm={12} md={6} xs={12}>
-                                            <img src={item.src} className="img-content" alt="Product"/>
-                                            <div className='content'>
-                                                <p className="title">{item.title}</p>
-                                                <p className="description">{item.description}</p>
-                                                <p className="price">{item.price}</p>
-                                            </div>
+                                    item.map((product, _index) => <Col span={6} key={_index} className="productBar-Card" sm={12} xs={12} md={6}>
+                                        <Row className="img-content">
+                                            <Col span={24} >
+                                                <img src={product.src} alt="Product" />
 
-                                        </Col>
-                                    )
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col span={24} className="content">
+                                                <p className="title">{product.title}</p>
+                                                <p className="description">{product.description}</p>
+                                                <p className="price">{product.price}</p>
+                                            </Col>
+                                        </Row>
+
+                                    </Col>)
                                 }
-                            </Row>
-
-                    {/* </Carousel> */}
+                            </Row></div>)
+                        }
+                    </Carousel>
                 </Col>
-                <Col flex={window.innerWidth > 768 ? "60px" : "16px"} className="arrowRight" onClick={() => handlePage("next")}>
-                <img src={RightArrow}  alt="Arrow"/>
+                <Col flex={window.innerWidth > 768 ? "60px" : "16px"} className="arrowRight">
+                    <img src={RightArrow} alt="Arrow"  onClick={ () => slider.current.next()} />
                 </Col>
 
             </Row>
